@@ -39,12 +39,3 @@ python -m agent.cli "Search for the latest news on LLMs and summarize it"
 | POST | `/v1/agent/stream` | Streaming agent run (SSE) |
 | GET  | `/v1/tools` | List available tools |
 | GET  | `/v1/health` | Health check + latency stats |
-
-## Resume Highlights
-
-- Streaming inference with SSE, sub-100ms time-to-first-token
-- ReAct agent loop with parallel tool execution
-- Vector memory with semantic search (ChromaDB)
-- Request batching with configurable concurrency limits
-- OpenTelemetry-compatible tracing per agent step
-- Benchmarking suite: tokens/sec, tool latency, memory retrieval p99
